@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/topDivider"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/button_spotify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/topDivider"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:onClick="sendToast"
+            android:foreground="?android:selectableItemBackground"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp"
+            card_view:cardBackgroundColor="@color/red" >
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:enabled="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/spotify" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/button_scores"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/topDivider"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:onClick="sendToast"
+            android:foreground="?android:selectableItemBackground"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp"
+            card_view:cardBackgroundColor="@color/yellow" >
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:enabled="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/scores" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/midDivider"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/button_library"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/midDivider"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:onClick="sendToast"
+            android:foreground="?android:selectableItemBackground"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp"
+            card_view:cardBackgroundColor="@color/green" >
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:enabled="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/library" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/button_big"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/midDivider"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:onClick="sendToast"
+            android:foreground="?android:selectableItemBackground"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp"
+            card_view:cardBackgroundColor="@color/blue" >
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:enabled="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/big" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/botDivider"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/button_xyz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/botDivider"
+            android:clickable="true"
+            android:onClick="sendToast"
+            android:foreground="?android:selectableItemBackground"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp"
+            card_view:cardBackgroundColor="@color/purple">
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:enabled="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/xyz" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/button_cap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/botDivider"
+            android:clickable="true"
+            android:onClick="sendToast"
+            android:foreground="?android:selectableItemBackground"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp"
+            card_view:cardBackgroundColor="@color/deepOrange" >
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:enabled="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/cap" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>
